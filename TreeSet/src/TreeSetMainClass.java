@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-public class Main {
+public class TreeSetMainClass {
 
-    public static void main(String args[])throws IOException {
+    public static void main(String args[]){
         Comparator<Person> pcomp = new PersonNameComparator().thenComparing(new PersonAgeComparator()).thenComparing(new PersonSurnameComparator());
         TreeSet<Person> people = new TreeSet(pcomp);
         people.add(new Person("Tom","Smith", 40));
